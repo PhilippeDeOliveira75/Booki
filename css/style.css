@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.w-bloc{
+    background-color: #FFF;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.row{
+    display: flex;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 800;
+    font-family:  'Raleway', sans-serif; ;
+}
+
+
+h3{
+    font-size: 13px;
+    font-weight: 800;
+    font-family:  'Raleway', sans-serif;
+}
+
+/* Header Start*/
+
+.row-header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.logo{
+    width: 60%;
+    height: auto;
+    padding: 30px 0px 0px 10px
+}
+
+    /*Start Nav bar*/
+
+.row-menu{
+    display:flex ;
+}
+
+.list-menu{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 40px;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: #000000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+nav li{
+    height: 100%;
+    display: flex;
+}
+
+.btn-menu:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+    /*End Nav Bar*/
+/*End Header*/
+
+/*Start Search Section*/
+
+
+.text-search{
+    font-size: medium;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.row-searching-bar{
+    display: flex;
+    height: 100%;
+    padding: 0px 0px 10px 0px;
+}
+
+    /*Start Search Bar*/
+
+.logo-map{
+    background-color: #F2F2F2;
+    border-radius: 13px 0px 0px 13px;
+    text-align: center;
+    padding: 10.5px 14px 13.5px 14px;
+    margin-right: -4px;
+}
+
+input{
+    height: 40px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 0.5px;
+}
+
+input::placeholder{
+    color: #000000;
+    padding-left: 10px;
+}
+
+.btn-desktop{
+    background-color: #0065FC;
+    color: #FFF;
+    height: 40px;
+    border-radius: 0px 13px 13px 0px;
+    width: 110px;
+    border: none;
+    font-weight: 550;
+    font-size: 14px;
+    margin-left: -4px;
+    transition: all 0.3s;
+}
+
+.btn-mobile{
+    display: none;
+}
+
+.btn-desktop:hover{
+    background-color: #FFF;
+    border: 1px solid #0065FC;
+    color: #0065FC;
+}
+
+/*End Search Bar*/
+
+/*End Search Section*/
+
+/*Start Filters Section*/
+
+.row-filters{
+    display: flex ;
+    height: auto;
+    align-items: center;
+    font-weight: bolder;
+    gap: 35px;
+    font-size: small;
+    padding: 12px 0px;
+}
+
+.filters-btn{
+    display: flex;
+    gap: 35px;
+}
+
+.w-btn{
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+
+.category{
+    height: 100%;
+    width: auto;
+    background-color: #fff;
+    border:none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-radius: 0px 50px 50px 0px;
+    font-weight: 800;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s;
+    padding: 0px 20px 0px 35px
+}
+
+.category:hover{
+    background-color: #DEEBFF;
+    border: none;
+    color: #0065FC;
+}
+
+.logo-filters{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 13px;
+    font-size: 14px;
+    position: absolute;
+    left: -20px; 
+}
+
+.logo-filters2{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 10px 14px 12px 14px;
+    font-size: 18px;
+    position: absolute;
+    left: -20px;   
+}
+
+.logo-filters3{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 12px;
+    font-size: 16px;
+    position: absolute;
+    left: -20px;  
+}
+
+.logo-filters4{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 12px;
+    font-size: 16px;
+    position: absolute;
+    left: -20px;    
+}
+
+/*End Filters Section*/
+
+.row-info{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+.logo-info{
+    font-size: small;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 2px 7px 4px 8px;
+}
+
+/*Start Article*/
+
+.row-article{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.w-article{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 70%;
+    height: 100%;
+    padding: 30px 30px 30px 30px;
+}
+
+.wcards-article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0px 45px 0px;
+}
+
+.cards-article{
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px;
+    background-color: #FFF;
+    width: 30%;
+    height: auto;
+    line-height: 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.cards-article:hover{
+    transform: scale(1.1);
+}
+
+.img-hebergement{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 92px;
+    object-fit: cover;
+}
+
+.blue-star{
+    color: #0065FC;
+}
+
+.grey-star{
+    color: #F2F2F2;
+}
+
+.showmore{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    padding: 0px 0px 20px 10px;
+}
+
+.showmore:hover{
+    color: #0065FC;
+}
+
+/*End Article*/
+
+/*Start Aside*/
+
+.w-aside{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aside-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+}
+
+.most-view-star{
+    font-size: 16px;
+}
+
+.w-cards-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.cards-aside{
+    display: flex;
+    border-radius: 20px;   
+    padding: 4px 0px 0px 4px;
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.info-aside{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 8px
+}
+
+.cards-aside:hover{
+    transform: scale(1.1);
+}
+
+.img-aside{
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/*End Aside*/
+
+/*Start Activites*/
+
+.w-activites{
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+
+.w-activites-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 355px;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.left-bloc-activites{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.right-bloc-activites{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column{
+    width: 50%;
+}
+
+.right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 50%;
+}
+
+.img-actvites-big{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-activites-fort{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-activites-ile-du-frioul{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-activites-Notre-Dame-de-la-Garde{
+    height: 100%;
+    width: 100%;
+}
+
+.img-Parc-Longchamp{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cards-big{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.cards-big:hover{
+    transform: scale(1.1);
+}
+
+.card-fort{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    height: 50%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.card-fort:hover{
+    transform: scale(1.1);    
+}
+
+.card-ile-du-frioul{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.card-ile-du-frioul:hover{
+    transform: scale(1.1);      
+}
+
+.card-Notre-Dame-de-la-Garde{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    height: 45%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.card-Notre-Dame-de-la-Garde:hover{
+    transform: scale(1.1);   
+}
+
+.card-Parc-Longchamp{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    height: 45%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d2d2d2;
+    transition: all 0.3s;
+}
+
+.card-Parc-Longchamp:hover{
+    transform: scale(1.1);     
+}
+.legend-img{
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 14px 18px;
+    height: 46px;
+
+}
+
+/*End Activites*/
+
+/*Start Footer*/
+
+.w-footer{
+    background-color: #F2F2F2;
+}
+
+.row-footer{
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    padding: 35px 0px;
+}
+
+.footer-list{
+    width: 33%;
+}
+.title-footer{
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.bottom-list{
+    list-style: none;
+    font-size: small;
+    line-height: 25px;   
+}
+
+.footer-list{
+    text-decoration: none;
+    color: #000000;
+}
+.footer-list:hover{
+    color: #0065FC;
+}
+
+/*End Footer*/
+
+@media screen and (max-width: 992px) {
+
+    .row-article{
+        flex-direction: column-reverse;
+    }
+
+    .text-search{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row-searching-bar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row-filters{
+        margin-left: 10px;
+    }
+
+    .category{
+        width: 95%;
+    }
+    .row-info{
+        margin-left: 10px;
+    }
+
+    .w-aside{
+        width: 100%;  
+        border-radius: 0px;
+    }
+
+    .w-cards-aside{
+        flex-direction: row;
+    }
+
+    .w-article{
+        width: 100%;
+        border-radius: 0px;    
+    }
+
+    .wcards-article{
+        justify-content: space-evenly;
+    }
+
+    .img-hebergement{
+        height: 120px;
+    }
+
+    .w-activites{
+        width: 98%;
+        margin-left: 10px;
+    }
+
+    .legend-img{
+        font-size: 12px;
+    }
+
+    .row-footer{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    h2{
+        font-size: 21px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+
+    .row-header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+
+    .w-logo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo{
+        width: 50%;
+        padding: 0px 0px;
+    }
+
+    .text-search{
+        display: block;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+    }
+
+    .text-search h2{
+        margin-bottom: 10px;
+    }
+
+    .row-menu{
+        width: 100%;
+        display: flex; 
+        gap: 0px;
+    }
+
+    .list-menu{
+        height: 50px;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .link-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .btn-menu{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;   
+    }
+
+    .btn-menu:hover{
+        border-top: none;
+    }
+
+    .btn-menu:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .row-searching-bar{
+        padding-left: 15px;
+        justify-content:left;
+    }
+
+    .logo-map{
+        font-size: 16px;
+        padding: 14px 17px 16px 17px;
+    }
+    input{
+        font-size: 16px;
+        width: 70%;
+        height: 100%;
+        padding-right: 40px;
+    }
+      
+    .btn-desktop{
+        display: none;
+    }
+
+    .btn-mobile{
+        display: inline;
+        background-color: #0065FC;
+        color: #FFF;
+        border-radius: 13px 13px 13px 13px;
+        text-align: center;
+        padding: 14px 16px 14px 16px;
+        margin-left: -10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .row-filters{
+        flex-wrap: wrap;
+        padding-left: 10px;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .row-filters h2{
+        font-size: 18px
+    }
+
+    .filters-btn{
+        flex-wrap: wrap;
+        padding-left: 20px;
+        row-gap: 15px;
+    }
+
+    .category{
+     width: 100%;
+    }
+
+    .row-info{
+        font-size: 15px;
+        padding: 0px 10px 40px 10px;
+    }
+
+    .row-article{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .w-article{
+        width: 100%;
+        padding: 15px 20px ;
+        background-color: #FFF;
+    }
+
+    .wcards-article{
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .cards-article{
+        width: 100%;
+    }
+
+    .img-hebergement{
+        width: 100%;
+        height: 120px;
+    }
+
+    .showmore{
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    .w-aside{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .aside-title{
+        padding-right: 10px;
+    }
+
+    .most-view-star{
+        font-size: 18px;
+    }
+
+    .w-cards-aside{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-aside{
+        height: 130px;
+        width: 120px;
+    }
+
+    .info-aside{
+        padding: 10px 20px
+    }
+
+    .cards-aside{
+        width: 100%;
+    }
+
+    .w-activites{
+        padding: 10px;
+    }
+
+    .w-activites-img{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-right: 10px;
+    }
+    
+    .left-bloc-activites{
+       display: block;
+        width: 100%;
+    }
+
+    .right-bloc-activites{
+        display: block;
+        width: 100%;
+    }
+
+    .left-column{
+        width: 100%;
+    }
+
+    .right-column{
+        width: 100%;
+    }
+
+    .cards-big{
+        height: 180px;
+        width: 100%;
+        margin-top: 20px;
+        min-width: 310px;
+    }
+
+    .img-actvites-big{
+        height: 185px;
+    }
+
+    .legend-img{
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+    .card-fort{
+        height: 180px;
+        width: 100%;
+        margin-top: 20px;
+        min-width: 310px
+    }
+
+    .img-activites-fort{
+        height: 185px;
+    }
+
+    .card-ile-du-frioul{
+        height: 180px;
+        width: 100%;
+        min-width: 310px;
+    }
+
+    .img-activites-ile-du-frioul{
+        height: 185px;
+    }
+
+    .card-Notre-Dame-de-la-Garde{
+        height: 180px;
+        width: 100%;
+        margin-top: 20px;
+        min-width: 310px;
+    }
+
+    .img-activites-Notre-Dame-de-la-Garde{
+        height: 185px;
+        object-fit: cover;
+    }
+
+    .card-Parc-Longchamp{
+        height: 180px;
+        width: 100%;
+        min-width: 310px;
+    }
+
+    .img-Parc-Longchamp{
+        height: 185px;
+        object-fit: cover;
+    }
+
+    .row-footer{
+        display: block;
+        width: 100%;
+    }
+
+    .footer-list{
+        width: 100%;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    .title-footer{
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+}
